@@ -9,7 +9,7 @@ public class Main {
         int b = hee.nextInt();
         int c = hee.nextInt();
 
-        if ((a < b && a < c)) {
+        if ((a <= b && a <= c)) {
             System.out.print("1");
         } else {
             System.out.print("0");
