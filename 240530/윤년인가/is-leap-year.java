@@ -7,12 +7,14 @@ public class Main {
 
         int y = hee.nextInt();
 
-        if (y % 4 == 0) {
-            System.out.println("true");
-        } else if (y % 100 == 0 && y % 400 == 0) {
-            System.out.println("true");
-        } else {
+        if (y % 100 == 0 && y % 400 != 0) {
             System.out.println("false");
+        } else {
+            if (y % 4 == 0) {
+                System.out.println("true");
+            } else {
+                System.out.println("false");
+            }
         }
     }
 }
